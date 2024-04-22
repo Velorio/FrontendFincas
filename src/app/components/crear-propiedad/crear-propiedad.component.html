@@ -1,0 +1,13 @@
+<p>crear-propiedad works!</p>
+<form (ngSubmit)="crearPropiedad()">
+    Calificacion<br/>
+    <input type ="number" name="Calificacion" [(ngModel)]="propiedad.calificacion" /><br/>
+    Precio<br/>
+    <input type ="number" name="Precio" [(ngModel)]="propiedad.precio" /><br/>
+    Ubicacion<br/>
+    <input type ="text" name="Ubicacion" [(ngModel)]="propiedad.ubicacion" /><br/>
+    Disponibilidad<br/>
+    <input type ="number" name="Disponibilidad" [(ngModel)]="propiedad.disponibilidad" /><br/>
+
+    <input type="submit"/>
+</form>

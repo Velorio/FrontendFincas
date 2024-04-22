@@ -1,0 +1,9 @@
+<p>listar-propiedades works!</p>
+<div class="container">
+    <h2>Listar Propiedades</h2>
+    <ul>
+      <li *ngFor="let propiedad of propiedades">
+        {{ propiedad.id }} - {{ propiedad.ubicacion }} - {{ propiedad.precio }} - {{ propiedad.disponibilidad }}
+      </li>
+    </ul>
+  </div>
