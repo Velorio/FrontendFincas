@@ -1,0 +1,18 @@
+<p>solicitud works!</p>
+<form (ngSubmit)='onSubmit()'>
+  <label for='idPropiedad'>Idpropiedad:</label><br/>
+  <input type='number' id='idPropiedad' name='idPropiedad' [(ngModel)]='model.idPropiedad' required><br/><br/>
+  <label for='nombreSolicitante'>Nombresolicitante:</label><br/>
+  <input type='text' id='nombreSolicitante' name='nombreSolicitante' [(ngModel)]='model.nombreSolicitante' required><br/><br/>
+  <label for='emailSolicitante'>Emailsolicitante:</label><br/>
+  <input type='email' id='emailSolicitante' name='emailSolicitante' [(ngModel)]='model.emailSolicitante' required><br/><br/>
+  <label for='telefonoSolicitante'>Telefonosolicitante:</label><br/>
+  <input type='text' id='telefonoSolicitante' name='telefonoSolicitante' [(ngModel)]='model.telefonoSolicitante' required><br/><br/>
+  <label for='mensaje'>Mensaje:</label><br/>
+  <input type='text' id='mensaje' name='mensaje' [(ngModel)]='model.mensaje' required><br/><br/>
+  <label for='estado'>Estado:</label><br/>
+  <input type='number' id='estado' name='estado' [(ngModel)]='model.estado' required><br/><br/>
+  <label for='fechaSolicitud'>Fechasolicitud:</label><br/>
+  <input type='date' id='fechaSolicitud' name='fechaSolicitud' [(ngModel)]='model.fechaSolicitud' required><br/><br/>
+  <input type='submit' value='Submit'>
+</form>

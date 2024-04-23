@@ -1,0 +1,12 @@
+<p>calificacionPropiedad works!</p>
+<form (ngSubmit)='onSubmit()'>
+  <label for='puntuacion'>Puntuacion:</label><br/>
+  <input type='number' id='puntuacion' name='puntuacion' [(ngModel)]='model.puntuacion' required><br/><br/>
+  <label for='comentario'>Comentario:</label><br/>
+  <input type='text' id='comentario' name='comentario' [(ngModel)]='model.comentario' required><br/><br/>
+  <label for='idPropiedad'>Idpropiedad:</label><br/>
+  <input type='number' id='idPropiedad' name='idPropiedad' [(ngModel)]='model.idPropiedad' required><br/><br/>
+  <label for='idUsuario'>Idusuario:</label><br/>
+  <input type='number' id='idUsuario' name='idUsuario' [(ngModel)]='model.idUsuario' required><br/><br/>
+  <input type='submit' value='Submit'>
+</form>
