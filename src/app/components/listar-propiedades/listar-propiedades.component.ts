@@ -27,6 +27,7 @@ export class ListarPropiedadesComponent {
     this.propiedadService.listarPropiedades().then(response =>{
       this.propiedades = response;
     })
+    console.log("Propiedades listadas");
   }
 
 }
