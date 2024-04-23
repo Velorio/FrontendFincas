@@ -1,14 +1,27 @@
-<p>crear-arrendador works!</p>
-
-<form (ngSubmit)="crearArrendador()">
-    Nombre<br/>
-    <input type="text" name="Nombre" [(ngModel)]="arrendador.nombre" /><br/>
-    Apellido<br/>
-    <input type="text" name="Apellido" [(ngModel)]="arrendador.apellido" /><br/>
-    Teléfono<br/>
-    <input type="text" name="Teléfono" [(ngModel)]="arrendador.telefono" /><br/>
-    Correo<br/>
-    <input type="text" name="Correo" [(ngModel)]="arrendador.correo" /><br/>
-
-    <input type="submit"/>
-</form>
+<div class="form-container">
+    <p>Crear Arrendador</p>
+    <form (ngSubmit)="crearArrendador()" class="arrendador-form">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="Nombre" [(ngModel)]="arrendador.nombre" />
+      </div>
+      
+      <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="Apellido" [(ngModel)]="arrendador.apellido" />
+      </div>
+      
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="Teléfono" [(ngModel)]="arrendador.telefono" />
+      </div>
+      
+      <div class="form-group">
+        <label for="correo">Correo</label>
+        <input type="text" id="correo" name="Correo" [(ngModel)]="arrendador.correo" />
+      </div>
+      
+      <input type="submit" value="Crear Arrendador"/>
+    </form>
+  </div>
+  

@@ -1,0 +1,9 @@
+<p>listar-arrendatarios works!</p>
+<div class="container">
+    <h2>Listar Arrendatarios</h2>
+    <ul>
+      <li *ngFor="let arrendatario of arrendatarios">
+        {{ arrendatario.id_arrendatario }} - {{ arrendatario.nombre }} - {{ arrendatario.apellido }} - {{ arrendatario.telefono }}
+     </li>
+    </ul>
+</div>

@@ -22,5 +22,14 @@ export class ArrendadorService {
     return axios.get<Arrendador[]>(this.apiUrl).then(response => response.data);
   }
 
+  actualizarArrendador(arrendador: Arrendador): Promise<Arrendador> {
+    const url = `${this.apiUrl}/${arrendador.id}`;
+    return axios.put<Arrendador>(url, arrendador).then(response => response.data);
+  }
 
+  eliminarArrendador(id: number): Promise<boolean> {
+    const url = `${this.apiUrl}/${id}`;
+    return axios.delete<boolean>(url).then(response => response.data);
+  }
+  
 }

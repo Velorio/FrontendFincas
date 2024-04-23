@@ -1,0 +1,14 @@
+<div class="form-container">
+    <p>crear arrendatario works!</p>
+        <form (ngSubmit)="crearArrendatario()">
+        Nombre<br/>
+        <input type="text" name="Nombre" [(ngModel)]="arrendatario.nombre" /><br/>
+        Apellido<br/>
+        <input type="text" name="Apellido" [(ngModel)]="arrendatario.apellido" /><br/>
+        Teléfono<br/>
+        <input type="text" name="Teléfono" [(ngModel)]="arrendatario.telefono" /><br/>
+        Correo<br/>
+        <input type="text" name="Correo" [(ngModel)]="arrendatario.correo" /><br/>
+    <input type="submit"/>
+</form>
+</div>

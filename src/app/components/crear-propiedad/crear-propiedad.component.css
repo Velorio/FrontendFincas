@@ -1,0 +1,21 @@
+.form-container {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    justify-content: center; /* Center items vertically, in the current line */
+    align-items: center; /* Center items horizontally, in the current line */
+    min-height: 100vh; /* Minimum height of 100% of the viewport height */
+    padding: 20px; /* Optional: Adds some space inside the container */
+  }
+  
+  form {
+    width: 100%; /* Set a specific width or max-width if desired */
+    max-width: 400px; /* Example: max-width for larger screens */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow to make the form pop a bit */
+    padding: 20px; /* Optional: Adds some padding inside the form */
+    border-radius: 5px; /* Optional: Rounds the corners of the form */
+  }
+  
+  input[type="submit"] {
+    margin-top: 10px; /* Adds some space above the submit button */
+  }
+  

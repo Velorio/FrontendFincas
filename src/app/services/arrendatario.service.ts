@@ -1,0 +1,21 @@
+import { Injectable } from '@angular/core';
+import { Arrendatario } from '../models/Arrendatario';
+import axios from 'axios';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ArrendatarioService {
+
+  private apiUrl = 'http://localhost:8080/arrendatarios';
+
+  constructor() { }
+
+  crearArrendatario(arrendatario: Arrendatario): Promise<Arrendatario> {
+    return axios.post<Arrendatario>(this.apiUrl, arrendatario).then(response => response.data);
+  }
+
+  listarArrendatarios(): Promise<Arrendatario[]> {
+    return axios.get<Arrendatario[]>(this.apiUrl).then(response => response.data);
+  }
+}
