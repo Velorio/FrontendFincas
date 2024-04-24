@@ -4,6 +4,8 @@ export class Propiedad{
         public calificacion?: number|null,
         public precio?: number|null,
         public ubicacion?: string|null,
-        public disponibilidad?: number|null
+        public disponibilidad?: number|null,
+        public imagenUrl?: string|null
+
     ){}
 }
