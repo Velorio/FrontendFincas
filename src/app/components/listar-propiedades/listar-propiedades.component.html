@@ -1,19 +1,13 @@
-npm install ngx-owl-carousel-o --save
-<p>listar-propiedades works!</p>
-<div class="container">
-  <h2>Listar Propiedades</h2>
-  <owl-carousel-o [options]="customOptions">
-    <ng-container *ngFor="let propiedad of propiedades">
-      <ng-template carouselSlide>
-        <div class="item">
-          <img [src]="propiedad.imagenUrl" alt="Imagen de la propiedad">
-          <h3>{{ propiedad.id }}</h3>
-          <p>{{ propiedad.ubicacion }}</p>
-          <p>{{ propiedad.precio }}</p>
-          <p>{{ propiedad.disponibilidad }}</p>
-        </div>
-      </ng-template>
-    </ng-container>
-  </owl-carousel-o>
-</div>
-z
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let propiedad of propiedades">
+    <div class="picsum-img-wrapper">
+      <img [src]="propiedad.imagenUrl" alt="Imagen de la propiedad">
+    </div>
+    <div class="carousel-caption">
+      <h3>Finca: {{ propiedad.id }}</h3>
+      <p>Precio: {{ propiedad.precio }}</p>
+      <p>Ubicación: {{ propiedad.ubicacion }}</p>
+      <p>Disponibilidad: {{ propiedad.disponibilidad }}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>

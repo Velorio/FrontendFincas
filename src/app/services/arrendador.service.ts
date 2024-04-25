@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Arrendador } from '../models/Arrendador';
 import { Observable, of } from 'rxjs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import axios from 'axios';
 
@@ -31,5 +32,5 @@ export class ArrendadorService {
     const url = `${this.apiUrl}/${id}`;
     return axios.delete<boolean>(url).then(response => response.data);
   }
-  
+
 }
