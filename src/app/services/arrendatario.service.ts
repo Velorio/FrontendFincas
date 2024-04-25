@@ -18,4 +18,9 @@ export class ArrendatarioService {
   listarArrendatarios(): Promise<Arrendatario[]> {
     return axios.get<Arrendatario[]>(this.apiUrl).then(response => response.data);
   }
+
+  eliminarArrendatario(id_arrendatario: number): Promise<boolean> {
+    const url = `${this.apiUrl}/${id_arrendatario}`;
+    return axios.delete<boolean>(url).then(response => response.data);
+  }
 }

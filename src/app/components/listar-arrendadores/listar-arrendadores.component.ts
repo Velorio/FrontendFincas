@@ -29,23 +29,13 @@ export class ListarArrendadoresComponent {
     })
   }
 
-
-  /*
-  eliminarArrendador(id: number) {
-    // Implementación básica para eliminar un arrendador
-    // Aquí se llama al servicio para eliminar el arrendador por su ID
-    if (confirm('¿Estás seguro de que deseas eliminar este arrendador?')) {
-      this.arrendadorService.eliminarArrendador(id).then(response => {
-        if (response) {
-          // Si la eliminación es exitosa, actualizar la lista de arrendadores
-          this.listarArrendadores();
-          console.log('Arrendador eliminado con éxito.');
-        } else {
-          console.log('Error al eliminar el arrendador.');
-        }
-      });
-    }
-  }*/
+  eliminarArrendador(id_arrendador: number){
+    this.arrendadorService.eliminarArrendador(id_arrendador).then(response =>{
+      if(response){
+        this.listarArrendadores();
+      }
+    })
+  }
 
 
 }

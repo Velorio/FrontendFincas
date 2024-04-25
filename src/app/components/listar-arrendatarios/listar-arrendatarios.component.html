@@ -1,4 +1,3 @@
-<p>listar-arrendatarios works!</p>
 <div class="container">
   <h2>Listar Arrendatarios</h2>
   <div class="carousel-container">
@@ -7,7 +6,7 @@
       <p>ID: {{ arrendatario.id_arrendatario }}</p>
       <p>Correo: {{ arrendatario.correo }}</p>
       <p>Teléfono: {{ arrendatario.telefono }}</p>
+      <button (click)="eliminarArrendatario(arrendatario.id_arrendatario || 0)">Eliminar</button>
     </div>
   </div>
 </div>
-

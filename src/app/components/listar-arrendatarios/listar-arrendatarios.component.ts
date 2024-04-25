@@ -29,4 +29,21 @@ export class ListarArrendatariosComponent {
     })
   }
 
+  eliminarArrendatario(id_arrendatario: number) {
+    if (confirm('¿Estás seguro de que deseas eliminar este arrendatario?')) {
+      this.arrendatarioService.eliminarArrendatario(id_arrendatario).then(response => {
+        if (response) {
+          // Si la eliminación es exitosa, forzar la recarga de la página
+          window.location.reload();
+          console.log('Arrendatario eliminado con éxito.');
+        } else {
+          console.log('Error al eliminar el arrendatario.');
+        }
+      }).catch(error => {
+        console.error("Error al eliminar el arrendatario:", error);
+      });
+    }
+  }
+
+
 }

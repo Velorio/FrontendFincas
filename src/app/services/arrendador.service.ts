@@ -28,8 +28,8 @@ export class ArrendadorService {
     return axios.put<Arrendador>(url, arrendador).then(response => response.data);
   }
 
-  eliminarArrendador(id: number): Promise<boolean> {
-    const url = `${this.apiUrl}/${id}`;
+  eliminarArrendador(id_arrendador: number): Promise<boolean> {
+    const url = `${this.apiUrl}/${id_arrendador}`;
     return axios.delete<boolean>(url).then(response => response.data);
   }
 
