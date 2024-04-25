@@ -29,6 +29,8 @@ export class ListarArrendadoresComponent {
     })
   }
 
+
+  /*
   eliminarArrendador(id: number) {
     // Implementación básica para eliminar un arrendador
     // Aquí se llama al servicio para eliminar el arrendador por su ID
@@ -43,7 +45,7 @@ export class ListarArrendadoresComponent {
         }
       });
     }
-  }
+  }*/
 
 
 }
