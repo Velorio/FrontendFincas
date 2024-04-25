@@ -3,11 +3,12 @@
   <div class="carousel-container">
     <div *ngFor="let arrendador of arrendadores" class="arrendador-card">
       <h3>{{ arrendador.nombre }} {{ arrendador.apellido }}</h3>
-      <p>ID: {{ arrendador.id }}</p>
+      <p>ID: {{ arrendador.id_arrendador }}</p>
       <p>Calificación: {{ arrendador.calificacion}}</p>
       <p>Correo: {{ arrendador.correo }}</p>
       <p>Teléfono: {{ arrendador.telefono }}</p>
       <!-- Añade más detalles que necesites aquí -->
+      <!--<button (click)="eliminarArrendador(arrendador.id_arrendador||0)">Eliminar</button>-->
     </div>
   </div>
 </div>

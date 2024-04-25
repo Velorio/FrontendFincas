@@ -3,9 +3,8 @@ import { Arrendatario } from './Arrendatario';
 
 export class CalificacionArrendatario {
     constructor(
-        public id_cal_arrendador?: number | null,
         public calificacion?: number | null,
-        public arrendador?: Arrendador | null,
-        public arrendatario?: Arrendatario | null
+        public id_arrendador?: Arrendador | null,
+        public id_arrendatario?: Arrendatario | null
     ) {}
 }

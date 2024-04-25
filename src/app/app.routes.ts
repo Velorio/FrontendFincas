@@ -4,6 +4,7 @@ import { ListarPropiedadesComponent } from './components/listar-propiedades/list
 import { CrearArrendadorComponent } from './components/crear-arrendador/crear-arrendador.component';
 import { ListarArrendadoresComponent } from './components/listar-arrendadores/listar-arrendadores.component';
 import { CrearArrendatarioComponent } from './components/crear-arrendatario/crear-arrendatario.component';
+import { ListarArrendatariosComponent } from './components/listar-arrendatarios/listar-arrendatarios.component';
 
 export const routes: Routes = [
     { path: 'pruebaPost', component: CrearPropiedadComponent},
@@ -11,6 +12,6 @@ export const routes: Routes = [
     { path: 'Arrendadores/nuevo', component: CrearArrendadorComponent},
     { path: 'Arrendadores', component: ListarArrendadoresComponent},
     { path: 'Arrendatarios/nuevo', component: CrearArrendatarioComponent},
-    { path: 'Arrendatarios', component: ListarArrendadoresComponent}
+    { path: 'Arrendatarios', component: ListarArrendatariosComponent}
 
 ];

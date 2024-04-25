@@ -24,7 +24,7 @@ export class ArrendadorService {
   }
 
   actualizarArrendador(arrendador: Arrendador): Promise<Arrendador> {
-    const url = `${this.apiUrl}/${arrendador.id}`;
+    const url = `${this.apiUrl}/${arrendador.id_arrendador}`;
     return axios.put<Arrendador>(url, arrendador).then(response => response.data);
   }
 
