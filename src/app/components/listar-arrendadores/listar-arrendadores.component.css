@@ -1,0 +1,20 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.arrendador-card {
+  flex: 0 0 auto; /* Evita que las tarjetas se estiren */
+  width: 300px; /* O el ancho que desees para cada tarjeta */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+}

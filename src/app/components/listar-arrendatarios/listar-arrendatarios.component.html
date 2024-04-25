@@ -1,9 +1,13 @@
 <p>listar-arrendatarios works!</p>
 <div class="container">
-    <h2>Listar Arrendatarios</h2>
-    <ul>
-      <li *ngFor="let arrendatario of arrendatarios">
-        {{ arrendatario.id_arrendatario }} - {{ arrendatario.nombre }} - {{ arrendatario.apellido }} - {{ arrendatario.telefono }}
-     </li>
-    </ul>
+  <h2>Listar Arrendatarios</h2>
+  <div class="carousel-container">
+    <div *ngFor="let arrendatario of arrendatarios" class="arrendatario-card">
+      <h3>{{ arrendatario.nombre }} {{ arrendatario.apellido }}</h3>
+      <p>ID: {{ arrendatario.id_arrendatario }}</p>
+      <p>Correo: {{ arrendatario.correo }}</p>
+      <p>Teléfono: {{ arrendatario.telefono }}</p>
+    </div>
+  </div>
 </div>
+
