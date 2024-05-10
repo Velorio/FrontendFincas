@@ -15,6 +15,7 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 export class ListarPropiedadesComponent {
 
   propiedades: Propiedad[] = [];
+  imagenPorDefecto: string = 'assets/images/finca1.jpg';
 
   constructor(
     private propiedadService: PropiedadService

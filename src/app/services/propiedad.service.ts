@@ -18,58 +18,15 @@ export class PropiedadService {
   }
 
   listarPropiedades(): Promise< Propiedad[] >{
-    //return axios.get< Propiedad[] >(this.apiUrl).then(response => response.data);
-    return Promise.resolve([
-      {
-        id: 0,
-        calificacion: 5,
-        precio: 100000,
-        ubicacion: 'Ubicación 1',
-        disponibilidad: 1,
-        imagenUrl: 'assets/images/finca1.jpg'
-      },
-      {
-        id: 1,
-        calificacion: 3,
-        precio: 500000,
-        ubicacion: 'Ubicación 2',
-        disponibilidad: 1,
-        imagenUrl: 'assets/images/finca2.jpg'
-      },
-      {
-        id: 2,
-        calificacion: 7,
-        precio: 8000000,
-        ubicacion: 'Ubicación 3',
-        disponibilidad: 0,
-        imagenUrl: 'assets/images/finca3.jpg'
-      },
-      {
-        id: 3,
-        calificacion: 6,
-        precio: 4000,
-        ubicacion: 'Ubicación 4',
-        disponibilidad: 0,
-        imagenUrl: 'assets/images/finca4.jpg'
-      },
-      {
-        id: 4,
-        calificacion: 9,
-        precio: 70000,
-        ubicacion: 'Ubicación 5',
-        disponibilidad: 1,
-        imagenUrl: 'assets/images/finca5.jpg'
-      },
-      {
-        id: 5,
-        calificacion: 10,
-        precio: 34000,
-        ubicacion: 'Ubicación 6',
-        disponibilidad: 0,
-        imagenUrl: 'assets/images/finca6.png'
-      },
+    return axios.get< Propiedad[] >(this.apiUrl).then(response => response.data);
+    
+  }
 
-    ]);
+  mejoresPropiedades(): Promise< Propiedad[] >{
+    const url = `${this.apiUrl}/mejores`;
+    const propiedades = axios.get< Propiedad[] >(url).then(response => response.data);
+    console.log("propiedades ",propiedades);
+    return axios.get< Propiedad[] >(url).then(response => response.data);
   }
 
 }
