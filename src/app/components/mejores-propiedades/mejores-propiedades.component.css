@@ -5,10 +5,10 @@ body {
 
 .hero {
   padding: 60px 0;
-  background-color: #3b5d50; /* Asegúrate de que el color coincida con la plantilla */
+  background-color: #3b5d50;
 }
 .py-5{
-  background-color: #3b5d50; /* Asegúrate de que el color coincida con la plantilla */
+  background-color: #3b5d50;
 }
 
 .py-5 .display-4 {
@@ -68,5 +68,5 @@ body {
   color: #6c757d;
   margin-top: 10px;
   display: block;
-  bold: 700;
+  font-weight: bold;
 }
