@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Propiedad } from '../../models/Propiedad';
 import { PropiedadService } from '../../services/propiedad.service';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-mejores-propiedades',
@@ -19,7 +21,7 @@ export class MejoresPropiedadesComponent {
   ngOnInit() {
     this.mejoresPropiedades();
   }
-  
+
   mejoresPropiedades() {
     this.propiedadService.mejoresPropiedades().then(response => {
       this.propiedades = response;

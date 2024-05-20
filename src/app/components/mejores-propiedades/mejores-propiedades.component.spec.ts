@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClient } from '@angular/common/http';
+
 
 import { MejoresPropiedadesComponent } from './mejores-propiedades.component';
 
@@ -11,7 +13,7 @@ describe('MejoresPropiedadesComponent', () => {
       imports: [MejoresPropiedadesComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(MejoresPropiedadesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
